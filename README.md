@@ -41,76 +41,36 @@ The platform continuously collects data, processes it, stores it in PostgreSQL, 
 
 ---
 
-#  System Architecture
+# 🏗️ System Architecture
 
+```mermaid
+flowchart TD
 
-                    ┌───────────────────┐
-                    │    TomTom API     │
-                    │ Traffic / Mobility│
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │ Traffic Ingestion │
-                    │ traffic_api.py    │
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │   traffic_data    │
-                    │    PostgreSQL     │
-                    └─────────┬─────────┘
-                              │
-                              │
-                    ┌─────────▼─────────┐
-                    │    Weather API    │
-                    │    OpenWeather    │
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │ Weather Ingestion │
-                    │ weather_api.py    │
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │   weather_data    │
-                    │    PostgreSQL     │
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │  Merge Processor  │
-                    │ merge_processor.py│
-                    └─────────┬─────────┘
-                              │
-                              ▼
-                ┌──────────────────────────┐
-                │   traffic_weather_data   │
-                │       PostgreSQL         │
-                └────────────┬─────────────┘
-                             │
-                             ▼
-                    ┌───────────────────┐
-                    │ Machine Learning  │
-                    │     Models        │
-                    └─────────┬─────────┘
-                              │
-             ┌────────────────┼────────────────┐
-             │                │                │
-             ▼                ▼                ▼
-       Congestion         Parking          Energy
-       Prediction        Prediction       Prediction
-             │                │                │
-             └────────────────┼────────────────┘
-                              │
-                              ▼
-                    ┌───────────────────┐
-                    │    Streamlit      │
-                    │    Operations     │
-                    │     Dashboard     │
-                    └───────────────────┘
+    A[TomTom API<br/>Traffic / Mobility] --> B[Traffic Ingestion<br/>traffic_api.py]
+    B --> C[(traffic_data<br/>PostgreSQL)]
+
+    D[OpenWeather API] --> E[Weather Ingestion<br/>weather_api.py]
+    E --> F[(weather_data<br/>PostgreSQL)]
+
+    C --> G[Merge Processor<br/>merge_processor.py]
+    F --> G
+
+    G --> H[(traffic_weather_data<br/>PostgreSQL)]
+
+    H --> I[Machine Learning Models]
+
+    I --> J[Congestion<br/>Prediction]
+    I --> K[Parking<br/>Prediction]
+    I --> L[Energy<br/>Prediction]
+    I --> M[Route Optimization]
+
+    J --> N[Streamlit<br/>Operations Dashboard]
+    K --> N
+    L --> N
+    M --> O[Interactive Map<br/>Route Visualization]
+
+    O --> N
+```
 
 # Running the Project
 
