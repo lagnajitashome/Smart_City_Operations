@@ -148,18 +148,19 @@ Key Capabilities
 - Visual route representation on maps
 The optimized routes can be visually displayed on a map, allowing users to understand the selected route and compare route conditions geographically.
 ### Route Optimization Workflow
-Source
-   ↓
-Destination
-   ↓
-Route Generation
-   ↓
-Traffic / Congestion Analysis
-   ↓
-Route Condition Evaluation
-   ↓
-Route Optimization
-   ↓
+
+Source  
+↓  
+Destination  
+↓  
+Route Generation  
+↓  
+Traffic / Congestion Analysis  
+↓  
+Route Condition Evaluation  
+↓  
+Route Optimization  
+↓  
 Map Visualization
 
 ### 🅿️ Parking
