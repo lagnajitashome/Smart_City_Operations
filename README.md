@@ -123,19 +123,25 @@ python -m streamlit run dashboard\final_dashboard.py
 
 
 
-# Interactive Operations Dashboard
-The project uses Streamlit to provide a centralized operations dashboard.
-The dashboard brings together multiple city-operation indicators.
-🚦 Mobility
+## 📊 Interactive Operations Dashboard
+
+The project uses **Streamlit** to provide a centralized operations dashboard.
+
+### 🚦 Mobility
+
 - Traffic conditions
 - Congestion predictions
 - Route conditions
-🅿️ Parking
+
+### 🅿️ Parking
+
 - Current occupancy
 - Predicted occupancy
 - Available spaces
 - Time-to-full
-⚡ Energy
+
+### ⚡ Energy
+
 - Current demand
 - Next-hour demand
 - Solar generation
@@ -145,7 +151,11 @@ The dashboard brings together multiple city-operation indicators.
 - Streetlights
 - Power outages
 - Peak-load prediction
-🌦️ Weather
+
+### 🌦️ Weather
+
+- Weather-aware operational information
+- Traffic-weather integration
 - Weather-aware operational information
 - Traffic-weather integration
 
