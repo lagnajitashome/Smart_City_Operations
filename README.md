@@ -113,13 +113,15 @@ The platform continuously collects data, processes it, stores it in PostgreSQL, 
                     └───────────────────┘
 
 # Running the Project
-Start the components locally:
-python -m ingestion.traffic_api
-python -m ingestion.weather_api
-python -m database.merge_processor
-python -m synthetic.parking_live_updater
-python -m energy.energy_generator
-Then launch the dashboard locally:
+
+Start the components locally:  
+python -m ingestion.traffic_api  
+python -m ingestion.weather_api  
+python -m database.merge_processor  
+python -m synthetic.parking_live_updater  
+python -m energy.energy_generator  
+
+Then launch the dashboard locally:  
 python -m streamlit run dashboard\final_dashboard.py
 
 
