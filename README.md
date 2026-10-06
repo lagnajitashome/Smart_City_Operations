@@ -122,20 +122,6 @@ Then launch the dashboard locally:
 python -m streamlit run dashboard\final_dashboard.py
 
 
-# Project Highlights------
-Component	             Implementation
-Traffic Data	             TomTom API
-Weather Data	             OpenWeather API
-Database	                 PostgreSQL
-Traffic Prediction	       Machine Learning
-Parking Prediction	       Machine Learning
-Energy Forecasting	       ML + Time Series
-Peak Load Prediction	     Classification
-EV Demand Forecasting	     Machine Learning
-Dashboard	                 Streamlit
-Programming	               Python
-Version Control	           Git / GitHub
-Large Model Storage	        Git LFS
 
 # Interactive Operations Dashboard
 The project uses Streamlit to provide a centralized operations dashboard.
