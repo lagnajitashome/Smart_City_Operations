@@ -41,7 +41,7 @@ The platform continuously collects data, processes it, stores it in PostgreSQL, 
 
 ---
 
-# 🏗️ System Architecture
+#  System Architecture
 
 ```mermaid
 flowchart TD
