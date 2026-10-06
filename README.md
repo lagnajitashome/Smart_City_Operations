@@ -30,6 +30,7 @@ The platform continuously collects data, processes it, stores it in PostgreSQL, 
 - Store structured operational data in PostgreSQL
 - Combine traffic and weather information
 - Predict traffic congestion
+- Perform traffic-aware route optimization
 - Monitor and forecast parking occupancy
 - Estimate parking availability and time-to-full
 - Forecast electricity demand
@@ -132,6 +133,32 @@ The project uses **Streamlit** to provide a centralized operations dashboard.
 - Traffic conditions
 - Congestion predictions
 - Route conditions
+###  🗺️ Route Optimization & Map Visualization
+A major component of the platform is the traffic-aware route optimization system.
+The system evaluates route conditions and uses traffic and congestion information to support route selection between locations.
+Key Capabilities
+- Source and destination based route generation
+- Alternative route evaluation
+- Traffic-aware route analysis
+- Congestion-aware route selection
+- Route condition comparison
+- Optimized route identification
+- Visual route representation on maps
+The optimized routes can be visually displayed on a map, allowing users to understand the selected route and compare route conditions geographically.
+### Route Optimization Workflow
+Source
+   ↓
+Destination
+   ↓
+Route Generation
+   ↓
+Traffic / Congestion Analysis
+   ↓
+Route Condition Evaluation
+   ↓
+Route Optimization
+   ↓
+Map Visualization
 
 ### 🅿️ Parking
 
